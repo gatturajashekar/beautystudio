@@ -82,7 +82,7 @@ Customers can cancel bookings but cannot reschedule them.
 - Flutter (Dart) — frontend
 - Firebase Authentication — user login & OTP
 - Firebase Cloud Messaging — notifications
-- AWS Amplify — backend services
+- AWS  — backend services
 - Android & iOS platforms
 
 ---
