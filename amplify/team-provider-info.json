@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-madhubeautystudio-dev-5e9ac-authRole",
+      "UnauthRoleArn": "arn:aws:iam::694816839018:role/amplify-madhubeautystudio-dev-5e9ac-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::694816839018:role/amplify-madhubeautystudio-dev-5e9ac-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-madhubeautystudio-dev-5e9ac-deployment",
+      "UnauthRoleName": "amplify-madhubeautystudio-dev-5e9ac-unauthRole",
+      "StackName": "amplify-madhubeautystudio-dev-5e9ac",
+      "StackId": "arn:aws:cloudformation:us-east-1:694816839018:stack/amplify-madhubeautystudio-dev-5e9ac/820588d0-90b0-11f0-8ff0-0affd62bb917",
+      "AmplifyAppId": "d23sd7j1mj4trn"
+    },
+    "categories": {
+      "auth": {
+        "madhubeautystudio487032e9": {}
+      },
+      "api": {
+        "madhubeautystudio": {}
+      },
+      "storage": {
+        "madhubeautystudio": {}
+      }
+    }
+  }
+}

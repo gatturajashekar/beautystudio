@@ -1,0 +1,43 @@
+import boto3
+from botocore.exceptions import NoCredentialsError, ClientError
+
+REGION = "us-east-1"
+PROFILE = "default"  # or your Amplify profile name
+
+session = boto3.Session(profile_name=PROFILE, region_name=REGION)
+dynamodb = session.resource("dynamodb")
+
+TABLES = {
+    "female_services": [
+        {"catogery": "Hair", "service_name": "Haircut", "duration": "45 mins", "price": 500},
+        {"catogery": "Hair", "service_name": "Hair Coloring", "duration": "90 mins", "price": 1500},
+        {"catogery": "Face", "service_name": "Facial", "duration": "60 mins", "price": 1200},
+        {"catogery": "Nails", "service_name": "Manicure", "duration": "30 mins", "price": 400},
+        {"catogery": "Nails", "service_name": "Pedicure", "duration": "45 mins", "price": 600},
+    ],
+    "male_services": [
+        {"catogery": "Hair", "service_name": "Haircut", "duration": "30 mins", "price": 300},
+        {"catogery": "Hair", "service_name": "Beard Trim", "duration": "20 mins", "price": 150},
+        {"catogery": "Face", "service_name": "Facial", "duration": "45 mins", "price": 1000},
+        {"catogery": "Nails", "service_name": "Manicure", "duration": "25 mins", "price": 250},
+        {"catogery": "Nails", "service_name": "Pedicure", "duration": "35 mins", "price": 350},
+    ],
+}
+
+def migrate_services():
+    try:
+        for table_name, items in TABLES.items():
+            table = dynamodb.Table(table_name)
+            print(f"\nMigrating into table: {table_name}")
+
+            for item in items:
+                table.put_item(Item=item)
+                print(f"Added: {item['service_name']} under {item['catogery']}")
+
+    except NoCredentialsError:
+        print("❌ AWS credentials not found. Run `aws configure` or Amplify CLI login.")
+    except ClientError as e:
+        print(f"❌ DynamoDB error: {e}")
+
+if __name__ == "__main__":
+    migrate_services()

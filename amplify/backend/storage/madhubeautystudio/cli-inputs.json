@@ -1,0 +1,14 @@
+{
+  "resourceName": "madhubeautystudio",
+  "policyUUID": "68caaf59",
+  "bucketName": "madhubeautystudio-images",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

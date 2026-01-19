@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "856088186724",
+    "project_id": "madhusbeautystudio",
+    "storage_bucket": "madhusbeautystudio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856088186724:android:90ef6a6991cba69b963471",
+        "android_client_info": {
+          "package_name": "com.beautystudio.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbnVzDABvTQEmE6s-d8OBmcKz1uHi5J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856088186724:android:32f2370183cf38a5963471",
+        "android_client_info": {
+          "package_name": "com.example.madhubeautystudio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbnVzDABvTQEmE6s-d8OBmcKz1uHi5J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856088186724:android:9b748e7d094f65aa963471",
+        "android_client_info": {
+          "package_name": "com.example.madhubeautystudio5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbnVzDABvTQEmE6s-d8OBmcKz1uHi5J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
