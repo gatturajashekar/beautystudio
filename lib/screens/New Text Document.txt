@@ -1,2 +1,0 @@
-$env:PATH += ";C:\Users\KIIT0001\AppData\Roaming\npm"
-$env:PATH += ";C:\Users\KIIT0001\AppData\Local\Pub\Cache\bin"
